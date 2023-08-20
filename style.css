@@ -18,35 +18,29 @@
 
 .navbar i {
     font-size: 12px;
+    cursor: pointer;
 }
 
 .dropdown-toggle::after {
     display: none !important;
 }
 
-
-
-.search-box{
-    height: 30px;
-    display: flex;
+.navbar i{
     cursor: pointer;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-radius: 30px;
-    align-items: center;
-   
 }
 
-.search-box:hover input{
-    width: 200px;
-    border: 1px solid black;
-}
-
-.search-input{
-    width: 0;
+.searcher{
     outline: none;
-    border: none;
-    font-weight: normal;
-    transition: 0.8s;
-    background-color: transparent;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 0px;
+    display: none;
+    transition: 0.3s;
 }
+
+
+.active{
+    display:inline-block;
+    max-width: 200px;
+}
+
